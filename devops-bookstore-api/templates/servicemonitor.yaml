@@ -10,3 +10,4 @@ spec:
       app: devops-bookstore-api
   endpoints:
   - port: http
+    interval: 15s
