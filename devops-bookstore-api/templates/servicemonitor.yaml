@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: devops-bookstore-api
+  labels:
+    release: prometheus #enables prometheus to scrape this monitor
+spec:
+  selector:
+    matchLabels:
+      app: devops-bookstore-api
+  endpoints:
+  - port: http
