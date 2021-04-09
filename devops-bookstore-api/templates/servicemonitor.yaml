@@ -3,7 +3,7 @@ kind: ServiceMonitor
 metadata:
   name: devops-bookstore-api
   labels:
-    release: kube-prometheus-stack #enables prometheus to scrape this monitor
+    release: kube-prom-stack #enables prometheus to scrape this monitor
 spec:
   selector:
     matchLabels:
